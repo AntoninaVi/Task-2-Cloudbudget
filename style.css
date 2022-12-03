@@ -90,7 +90,7 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  max-width: 100%;
+  width: 100%;
   padding-top: 3.7em;
   padding-bottom: 11.6em;
   margin-bottom: 5.8em;
@@ -174,6 +174,11 @@ body {
   color: #ed4c5c;
   text-decoration: none;
   cursor: pointer;
+}
+.management__link:hover {
+  color: #1c760a;
+  -webkit-transition: ease-in 0.3s;
+  transition: ease-in 0.3s;
 }
 .management__img {
   width: 27.8rem;
@@ -262,4 +267,72 @@ body {
   color: #ed4c5c;
   text-decoration: none;
   cursor: pointer;
+}
+.features__link:hover {
+  color: #1c760a;
+  -webkit-transition: ease-in 0.3s;
+  transition: ease-in 0.3s;
+}
+
+.technology {
+  padding-top: 3.9em;
+  padding-bottom: 6.5em;
+}
+.technology__title {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 43px;
+  color: #000000;
+  text-align: center;
+  margin: 0;
+}
+.technology__groups {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.technology__group-number {
+  position: relative;
+  z-index: 1;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 120px;
+  text-align: center;
+  color: rgba(16, 16, 16, 0.08);
+}
+.technology__group-content {
+  display: block;
+  position: relative;
+  z-index: 3;
+  bottom: 10em;
+  text-align: center;
+}
+.technology__group-img {
+  width: 4.3em;
+  height: 3em;
+  max-width: 100%;
+}
+.technology__group-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+}
+.technology__group-subscription {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  text-align: justify;
+  color: #000000;
+  font-size: 12px;
+  width: 11.9em;
+  text-align: center;
 }

@@ -25,6 +25,10 @@
 	color: #ed4c5c;
 	text-decoration: none;
 	cursor: pointer;
+	&:hover {
+		color: #1c760a;
+		transition: ease-in 0.3s;
+	}
 }
 @mixin subscription {
 	font-weight: 400;
@@ -98,7 +102,7 @@ body {
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
-		max-width: 100%;
+		width: 100%;
 		padding-top: 3.7em;
 		padding-bottom: 11.6em;
 		margin-bottom: 5.8em;
@@ -237,22 +241,56 @@ body {
 	}
 }
 .technology {
-	&__group {
+	padding-top: 3.9em;
+	padding-bottom: 6.5em;
+
+	&__title {
+		@include title;
+		text-align: center;
+		margin: 0;
+	}
+	&__groups {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
 	}
 
 	&__group-number {
+		position: relative;
+		z-index: 1;
+		font-weight: 700;
+		font-size: 100px;
+		line-height: 120px;
+		text-align: center;
+		color: rgba(16, 16, 16, 0.08);
 	}
 
 	&__group-content {
+		display: block;
+		position: relative;
+		z-index: 3;
+		bottom: 10em;
+		text-align: center;
 	}
 
 	&__group-img {
+		width: 4.3em;
+		height: 3em;
+		max-width: 100%;
 	}
 
 	&__group-title {
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 22px;
+		text-align: center;
 	}
 
 	&__group-subscription {
+		@include subscription;
+		font-size: 12px;
+		width: 11.9em;
+		text-align: center;
 	}
 }
 .saving {
