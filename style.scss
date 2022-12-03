@@ -37,6 +37,14 @@
 	text-align: justify;
 	color: #000000;
 }
+@mixin links {
+	text-decoration: none;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 160%;
+	text-transform: capitalize;
+	color: #000000;
+}
 
 body {
 	font-family: "Lato", sans-serif;
@@ -102,7 +110,6 @@ body {
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
-		width: 100%;
 		padding-top: 3.7em;
 		padding-bottom: 11.6em;
 		margin-bottom: 5.8em;
@@ -294,65 +301,125 @@ body {
 	}
 }
 .saving {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+
 	&__wrapper {
+		background: #ed4c5c;
+		padding-top: 5.9em;
+		padding-bottom: 5.9em;
 	}
 
 	&__content {
+		width: 27.8em;
 	}
 
 	&__title {
+		@include title;
+		color: #ffffff;
+		margin-bottom: 1.5em;
 	}
 
 	&__subscription {
-	}
-
-	&__links {
+		@include subscription;
+		color: #ffffff;
+		margin-bottom: 2.5em;
 	}
 
 	&__link {
+		margin-right: 1.4em;
+		&:last-child {
+			margin-right: 0;
+		}
 	}
 
 	&__link-img {
+		width: 2em;
+		max-width: 100%;
 	}
 
 	&__img {
+		width: 27.8em;
+		max-width: 100%;
 	}
 }
 .contact {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 7.3em;
+	padding-bottom: 7.6em;
+
 	&__content {
+		margin-right: 7.1em;
 	}
 
 	&__title {
+		@include title;
 	}
 
 	&__subscription {
+		@include subscription;
+		width: 27em;
 	}
 
 	&__form {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		width: 33.7em;
+		max-width: 100%;
 	}
 }
 .footer {
 	&__wrapper {
+		padding-top: 5.3em;
+		padding-bottom: 5.3em;
+		background: #fafafa;
 	}
-
+	&__groups {
+		display: flex;
+		justify-content: space-between;
+	}
 	&__group {
+		&:first-child {
+			width: 10.8em;
+		}
 	}
 
 	&__group-title {
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 22px;
+		margin: 0;
+		margin-bottom: 2em;
 	}
 
 	&__group-items {
+		display: flex;
+		flex-direction: column;
 	}
 
 	&__group-link {
+		@include links;
 	}
 
 	&__group-socials {
+		margin-top: 12px;
 	}
 
 	&__group-link-img {
 	}
 
 	&__copyright {
+		@include links;
+		margin-top: 8.3em;
+	}
+}
+.footer__group-items .footer__group-link {
+	margin-bottom: 12px;
+	&:last-child{
+		margin-bottom: 0;
 	}
 }
