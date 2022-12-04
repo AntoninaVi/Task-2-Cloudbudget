@@ -21,16 +21,30 @@
                         <a href="#" class="nav__logo">CloudBudget</a>
                     </div>
                     <div class="nav__items">
-                        <a href="#" class="nav__item">OVERVIEW</a>
-                        <a href="#" class="nav__item">FEATURES</a>
-                        <a href="#" class="nav__item">TECHNOLOGY</a>
-                        <a href="#" class="nav__item">CONTACT</a>
+                        <a href="#overview" class="nav__item">OVERVIEW</a>
+                        <a href="#features" class="nav__item">FEATURES</a>
+                        <a href="#technology" class="nav__item">TECHNOLOGY</a>
+                        <a href="#contact" class="nav__item">CONTACT</a>
                         <a href="#" class="nav__item"> Sign up</a>
                     </div>
                     <a href="#" class="nav__button">LOGIN</a>
                 </nav>
+                <div class="burger-menu">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                        <span></span>
+                    </label>
+                    <div class="menu__box">
+                        <a href="#overview" class="menu__item">OVERVIEW</a>
+                        <a href="#features" class="menu__item">FEATURES</a>
+                        <a href="#technology" class="menu__item">TECHNOLOGY</a>
+                        <a href="#contact" class="menu__item">CONTACT</a>
+                        <a href="#" class="menu__item"> Sign up</a>
+                        <a href="#" class="menu__button">LOGIN</a>
+                    </div>
+                </div>
             </header>
-            <main class="main">
+            <main id="#overview" class="main">
                 <h1 class="main__title">Cloudbudget</h1>
                 <p class="main__subscription">Cloud budget management for everyone. Only €69.95 a Month After a 7
                     Day
@@ -40,7 +54,7 @@
         </div>
     </div>
 
-    <section class="management">
+    <section class="management"> <a name="overview"></a>
         <div class="management__content">
             <h2 class="management__title">Easy to Use Cloud Budget Management Software</h2>
             <p class="management__subscription subscription">Our software is made so you can access and manage
@@ -55,7 +69,7 @@
     </section>
 
 
-    <section class="features">
+    <section class="features"><a name="features"></a>
         <div class="container">
             <h2 class="features__title">Features</h2>
             <div class="features__groups">
@@ -95,7 +109,7 @@
         </div>
     </section>
 
-    <section class="technology">
+    <section class="technology"><a name="technology"></a>
         <h2 class="features__title">Technology</h2>
         <div class="technology__groups">
             <div class="technology__group">
@@ -162,8 +176,7 @@
             </section>
         </div>
     </div>
-    <section class="contact">
-
+    <section class="contact"><a name="contact"></a>
         <div class="contact__content">
             <h2 class="contact__title">Contact</h2>
             <p class="contact__subscription subscription">Questions or concerns? Just fill out the form below
@@ -171,19 +184,17 @@
                 our support team will get back to you within 24 hours</p>
         </div>
         <form action="" class="contact__form">
-            <input type="text" name="First Name" placeholder="First Name" id="inputFirst">
-            <input type="text" name="Last Name" placeholder="Last Name" id="inputLast">
-            <input type="tel" name="Phone number" placeholder="Phone Bumber" id="inputNumber">
+            <input type="text" name="First Name" placeholder="First Name" id="inputFirst" required>
+            <input type="text" name="Last Name" placeholder="Last Name" id="inputLast" required>
+            <input type="tel" name="Phone number" placeholder="Phone Number" id="inputNumber" required>
             <input type="text" name="Your Question" placeholder="Your Question" id="inputQuest">
-            <input type="button" value="Submit now" id="inputBtn">
+            <button class="contact__button">Submit now</button>
         </form>
 
     </section>
     <div class="footer__wrapper">
-        <footer class="footer">
-
-            <div class="container">
-
+        <div class="container">
+            <footer class="footer">
                 <div class="footer__groups">
                     <div class="footer__group">
                         <h4 class="footer__group-title">Address</h4>
@@ -218,7 +229,6 @@
                     </div>
                     <div class="footer__group">
                         <h4 class="footer__group-title">We Support</h4>
-
                         <a href="#" class="footer__group-link">
                             <img src="img/pay.svg" alt="payment" class="footer__group-link-img">
                         </a>
@@ -228,7 +238,8 @@
                 <div class="footer__copyright">
                     <a href="#" class="footer__group-link">Copyright 2018 CloudBudget</a>
                 </div>
-        </footer>
+            </footer>
+        </div>
     </div>
     </div>
 </body>
