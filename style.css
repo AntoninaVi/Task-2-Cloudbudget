@@ -614,12 +614,12 @@ body {
             justify-content: center;
   }
 }
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 690px) {
   .technology__groups {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 35% 1em 30%;
-    grid-template-columns: 35% 30%;
+    -ms-grid-columns: 44% 1em 44%;
+    grid-template-columns: 44% 44%;
     -ms-grid-rows: 20% 1em 20%;
     grid-template-rows: 20% 20%;
     gap: 1em;
@@ -663,6 +663,11 @@ body {
   text-align: center;
   color: rgba(16, 16, 16, 0.08);
 }
+@media screen and (max-width: 450px) {
+  .technology__group-number {
+    font-size: 85px;
+  }
+}
 .technology__group-content {
   display: block;
   position: relative;
@@ -681,6 +686,12 @@ body {
   font-size: 18px;
   line-height: 22px;
   text-align: center;
+  white-space: nowrap;
+}
+@media screen and (max-width: 450px) {
+  .technology__group-title {
+    font-size: 16px;
+  }
 }
 .technology__group-subscription {
   font-weight: 400;
@@ -697,6 +708,14 @@ body {
     line-height: 100%;
   }
 }
+@media screen and (max-width: 690px) {
+  .technology__group-subscription {
+    max-width: 11.5em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media screen and (max-width: 1060px) {
   .technology {
     padding: 3em 0 3em 0;
