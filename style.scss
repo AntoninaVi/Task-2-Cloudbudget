@@ -394,7 +394,7 @@ body {
 	padding-top: 3.9em;
 	background-color: #fafafa;
 	width: 100%;
-	
+	scroll-snap-align: center;
 	@media screen and (max-width: 620px) {
 		padding-top: 0;
 	}
