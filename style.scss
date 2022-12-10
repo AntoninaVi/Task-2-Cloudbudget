@@ -267,7 +267,6 @@ body {
 		padding-top: 3.7em;
 		padding-bottom: 11.6em;
 		margin-bottom: 5.8em;
-		width: 100%;
 		max-height: 48.8em;
 		width: 100%;
 		scroll-snap-align: center;
@@ -394,6 +393,8 @@ body {
 .features {
 	padding-top: 3.9em;
 	background-color: #fafafa;
+	width: 100%;
+	scroll-snap-align: center;
 	@media screen and (max-width: 620px) {
 		padding-top: 0;
 	}
