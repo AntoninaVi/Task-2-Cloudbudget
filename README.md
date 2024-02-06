@@ -14,4 +14,4 @@ Technologies used in the project:
 *   HTML
 *   SCSS
 
-![Cloudbudget](https://github.com/AntoninaVi/Task-2-Cloudbudget/assets/68278960/e021209b-999e-46b9-980c-8cb61de09427)
+![Cloudbudget](https://github.com/AntoninaVi/Task-2-Cloudbudget/assets/68278960/a3392804-c3c0-46ae-8203-27cae3ee8c89)
